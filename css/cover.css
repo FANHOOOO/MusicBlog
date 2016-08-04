@@ -291,7 +291,7 @@ a.playertext:hover:after, a.playertext:focus:after {
 
 /* list style */
 
-ul {
+.songlist ul {
   list-style-type: none;
   width: 700px;
   margin: 0;
@@ -301,7 +301,7 @@ ul {
 
 
 
-li img {
+.songlist li img {
   float: left;
   vertical-align: middle;
   margin-right: 20px;
@@ -313,7 +313,7 @@ li img {
 
 
 
-li {
+.songlist li {
   float: left;
   padding: 10px;
   overflow: auto;
@@ -324,7 +324,35 @@ li {
   vertical-align: middle;
 }
 
-li h3, li p {
+.songlist li h3, .songlist li p {
   text-align: left;
+}
+
+.InfoNav ul {
+  list-style-type: none;
+  /*width: 1200px;*/
+  white-space: nowrap;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.InfoNav ul li {
+  display: inline-block;
+  margin: auto;
+  padding: auto;
+}
+.InfoNav {
+  text-align: center;
+}
+.mylabel {
+  font-size: 15px;
+}
+
+/* guitar img */
+
+.ContentImg img {
+  /*display: inline-block;*/
+  width: 200%;
+  /*float: right;*/
 }
 
