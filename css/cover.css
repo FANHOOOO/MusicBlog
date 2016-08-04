@@ -8,6 +8,7 @@ a,
 a:focus,
 a:hover {
   color: #fff;
+  text-decoration: none;
 }
 
 /* Custom default button */
@@ -60,7 +61,7 @@ body {
   text-align: center;
 }
 
-.masthead h3 {
+.masthead h3, .playerhead h3 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 500;
   font-size: 50px;
@@ -129,16 +130,33 @@ body {
   display: block;
   margin: auto;
 }
-img {
+
+.cover-img img {
   width: 250px;
   height: 250px;
 }
+
+.players {
+  display: block;
+}
+.player-img {
+  display: inline-table;
+  margin: 30px;
+}
+.player-img img{
+  width: 150px;
+  height: 150px;
+}
+
+/*.songlist {
+  float: left;
+}*/
 
 /*
  * Footer
  */
 
-.mastfoot {
+.mastfoot, .playerfoot {
   color: #999; /* IE8 proofing */
   color: rgba(255,255,255,.5);
 }
@@ -151,11 +169,19 @@ img {
 @media (min-width: 768px) {
   /* Pull out the header and footer */
   .masthead {
-    position: fixed;
+    position: relative;
+    top: 0;
+  }
+  .playerhead {
+    position: relative;
     top: 0;
   }
   .mastfoot {
-    position: fixed;
+    position: relative;
+    bottom: 0;
+  }
+  .playerfoot {
+    position: relative;
     bottom: 0;
   }
   /* Start the vertical centering */
@@ -165,6 +191,8 @@ img {
   /* Handle the widths */
   .masthead,
   .mastfoot,
+  .playerhead,
+  .playerfoot,
   .cover-container {
     width: 100%; /* Must be percentage or pixels for horizontal alignment */
   }
@@ -173,6 +201,8 @@ img {
 @media (min-width: 992px) {
   .masthead,
   .mastfoot,
+  .playerhead,
+  .playerfoot,
   .cover-container {
     width: 700px;
   }
@@ -229,3 +259,72 @@ a.hovertext:after {
 a.hovertext:hover:after, a.hovertext:focus:after {
     opacity: 1.0;
 }
+
+a.playertext {
+    position: relative;
+    width: 150px;
+    text-decoration: none !important;
+    text-align: center;
+    vertical-align: middle;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+}
+a.playertext:after {
+    content: attr(instru);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 0.5em 20px;
+    width: 150px;
+    text-decoration: none !important;
+    color: #fff;
+    opacity: 0;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    -ms-transition: 0.5s;
+}
+a.playertext:hover:after, a.playertext:focus:after {
+    opacity: 1.0;
+}
+
+/* list style */
+
+ul {
+  list-style-type: none;
+  width: 700px;
+  margin: 0;
+  margin-left: -10px;
+  padding: 0;
+}
+
+
+
+li img {
+  float: left;
+  vertical-align: middle;
+  margin-right: 20px;
+  margin-top: 10px;
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+}
+
+
+
+li {
+  float: left;
+  padding: 10px;
+  overflow: auto;
+  border-radius: 10px;
+  /*display: inline;*/
+  width: 350px;
+  /*margin: auto;*/
+  vertical-align: middle;
+}
+
+li h3, li p {
+  text-align: left;
+}
+
