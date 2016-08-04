@@ -47,10 +47,10 @@
 
           <div class="row row-fluid">
             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 cover-img">
-              <a class="hovertext" instru="Guitar" href="guitar.html"><img src="images/guitar.jpg" class="img-circle img-fluid rotate" alt="Responsive image"></a>
+              <a class="hovertext rotate" instru="Guitar" href="guitar.html"><img src="images/guitar.jpg" class="img-circle img-fluid" alt="Responsive image"></a>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-6 col-md-offset-6 col-lg-6 col-lg-offset-6 cover-img">
-              <a class="hovertext" instru="Piano" href="piano.html"><img src="images/piano.jpg" class="img-circle img-fluid rotate" alt="Responsive image"></a>
+              <a class="hovertext rotate" instru="Piano" href="piano.html"><img src="images/piano.jpg" class="img-circle img-fluid" alt="Responsive image"></a>
             </div>
           </div>
 
@@ -78,9 +78,8 @@
     <script src="js/ie10-viewport-bug-workaround.js"></script>
     <script type="text/javascript">
       $("a.hovertext").hover(function(){
-        $(this).parent().find(".rotate").css("opacity", "0.3").css("animation-play-state", "paused");
-      },function(){
-        $(this).parent().find(".rotate").css("opacity", "0.9").css("animation-play-state", "resume");
+        $(".rotate img").css("opacity", "0.3");
+        $(".rotate img").css("animation-play-state", "paused");
       });
     </script>
   </body>
