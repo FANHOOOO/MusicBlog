@@ -12,19 +12,18 @@
     <title>FAN MUSIC BLOG</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../../css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../../css/animate.css">
-    <link rel="stylesheet" href="../../css/hover.css">
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="../../css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <link href="../../../css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="../../css/cover.css" rel="stylesheet">
+    <link href="../../../css/cover.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="../../js/ie-emulation-modes-warning.js"></script>
+    <script src="../../../js/ie-emulation-modes-warning.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -43,20 +42,30 @@
 
           <div class="playerhead">
             <div class="inner">
-              <h3 class="masthead-brand">Jay Zhou 周杰伦</h3>
+              <h3 class="masthead-brand">Jay Zhou 浪漫手机</h3>
             </div>
           </div>
 
-          <div class="row row-fluid songlist">
-            <div class="col-md-10 col-md-offset-1 col-lg-10 col-offset-1">
-              <ul>
-                <li><a href="SongList/爱在西元前.html"><img src="../../images/players/jay.jpg"><h3>爱在西元前</h3><p>作词：方文山 作曲：周杰伦 </p></a></li>
-                <li><a href="SongList/浪漫手机.html"><img src="../../images/players/jay.jpg"><h3>浪漫手机</h3><p>作词：方文山 作曲：周杰伦 </p></a></li>
-                <li><a href="SongList/雨下一整晚.html"><img src="../../images/players/jay.jpg"><h3>雨下一整晚</h3><p>作词：方文山 作曲：周杰伦 </p></a></li>
-                <li><a href="SongList/爱在西元前.html"><img src="../../images/players/jay.jpg"><h3>爱在西元前</h3><p>作词：方文山 作曲：周杰伦 </p></a></li>
-                <li><a href="#"><img src="../../images/players/jay.jpg"><h3>简单爱</h3><p>作词：方文山 作曲：周杰伦 </p></a></li>
-                <li><a href="#"><img src="../../images/players/jay.jpg"><h3>龙卷风</h3><p>作词：方文山 作曲：周杰伦 </p></a></li>
-              </ul>
+          <div class="row row-fluid SongDetail">
+            <div class="col-md-12  col-lg-12">
+              <div class="InfoNav">
+                <ul>
+                  <li><span class="label label-default mylabel"><a href="#">From: 木木吉他</span></a></li>
+                  <li><span class="label label-default mylabel">作词：方文山</span></li>
+                  <li><span class="label label-default mylabel">作曲：周杰伦</span></li>
+                  <li><span class="label label-default mylabel">原Key：Bb</span></li>
+                  <li><span class="label label-default mylabel">PlayKey：G</span></li>
+                  <li><span class="label label-default mylabel">Capo: 3</span></li>
+                </ul>
+              </div>
+              <br>
+              <br>
+              <div class="ContectImg">
+                <img src="../SongImg/浪漫手机.png" class="img-fluid" alt="Responsive image" width="600">
+              </div>
+            <!--   <div class="embed-responsive embed-responsive-4by3">
+                <iframe class="embed-responsive-item" src="../SongImg/爱在西元前.jpg" style="width: 100%"></iframe>
+              </div> -->
             </div>
           </div>
 
@@ -77,23 +86,17 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="../../js/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="../../js/jquery.min.js"><\/script>')</script>
-    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../../js/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../../js/jquery.min.js"><\/script>')</script>
+    <script src="../../../js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../js/ie10-viewport-bug-workaround.js"></script>
+    <script src="../../../js/ie10-viewport-bug-workaround.js"></script>
     <script type="text/javascript">
       $("a").hover(function(){
         $(this).find("img").addClass("animated infinite pulse");
       },function(){
         $(this).find("img").removeClass("animated infinite pulse");
       });
-      $("li").hover(function(){
-        $(this).addClass("hvr-grow-shadow");
-      },function(){
-        $(this).removeClass("hvr-grow-shadow");
-      });
-
     </script>
   </body>
 </html>
