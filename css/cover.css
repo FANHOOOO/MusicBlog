@@ -241,7 +241,6 @@ body {
 
   .songlist li {
     float: left;
-    position: relative;
     padding: 10px;
     overflow: hidden;
     border-radius: 10px;
@@ -249,7 +248,7 @@ body {
     width: 200px;
     /*margin: 10px;*/
     margin-right: 50px;
-    margin-left: 50px;
+    margin-left: 20px;
   }
 
 }
