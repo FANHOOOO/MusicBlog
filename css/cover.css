@@ -414,7 +414,7 @@ a.playertext:hover:after, a.playertext:focus:after {
 .InfoNav ul {
   list-style-type: none;
   /*width: 1200px;*/
-  white-space: nowrap;
+  /*white-space: nowrap;*/
   margin: 0;
   padding: 0;
   text-align: center;
@@ -422,6 +422,7 @@ a.playertext:hover:after, a.playertext:focus:after {
 .InfoNav ul li {
   display: inline-block;
   margin: auto;
+  margin-top: 10px;
   padding: auto;
 }
 .InfoNav {
@@ -435,7 +436,7 @@ a.playertext:hover:after, a.playertext:focus:after {
 
 .ContentImg img {
   /*display: inline-block;*/
-  width: 200%;
+  position: relative;
   /*float: right;*/
 }
 
