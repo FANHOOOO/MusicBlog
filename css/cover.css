@@ -48,7 +48,7 @@ body {
 }
 .site-wrapper-inner {
   display: table-cell;
-  vertical-align: top;
+  vertical-align: middle;
 }
 .cover-container {
   margin-right: auto;
@@ -67,6 +67,11 @@ body {
   font-size: 50px;
 }
 
+.aboutme p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+}
 
 /*
  * Header
@@ -76,7 +81,22 @@ body {
   margin-bottom: 10px;
   text-align: center;
 }
+.GuitarHead {
+  /*margin-top: 10px;*/
+  /*margin-bottom: 2px;*/
+  margin-top: 0;
+  padding: auto;
+}
+.GuitarHead h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+}
 
+.Navbar {
+  margin-top: 10px;
+  vertical-align: middle;
+}
 .masthead-nav > li {
   display: inline-block;
 }
@@ -84,10 +104,11 @@ body {
   margin-left: 20px;
 }
 .masthead-nav > li > a {
-  padding-right: 0;
-  padding-left: 0;
-  font-size: 16px;
-  font-weight: bold;
+  /*padding-right: 0;*/
+  /*padding-left: 0;*/
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
   color: #fff; /* IE8 proofing */
   color: rgba(255,255,255,.75);
   border-bottom: 2px solid transparent;
@@ -106,9 +127,14 @@ body {
 }
 
 @media (min-width: 768px) {
-
+  .GuitarHead {
+    float: left;
+    /*height: 100%;*/
+    vertical-align: middle;
+  }
   .masthead-nav {
     float: right;
+    /*height: 100%;*/
   }
 }
 
@@ -129,6 +155,7 @@ body {
   vertical-align: middle;
   display: block;
   margin: auto;
+  padding: auto;
 }
 
 .cover-img img {
@@ -138,6 +165,7 @@ body {
 
 .players {
   display: block;
+  margin-top: 40px;
 }
 .player-img {
   display: inline-table;
@@ -148,9 +176,10 @@ body {
   height: 150px;
 }
 
-/*.songlist {
-  float: left;
-}*/
+.songlist {
+  margin-top: 60px;
+  text-align: center;
+}
 
 /*
  * Footer
@@ -166,8 +195,69 @@ body {
  * Affix and center
  */
 
+@media (max-width: 992px) {
+  .cover-img {
+    vertical-align: middle;
+    display: inline-block;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding: auto;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .songlist {
+    /*margin-top: 20px;*/
+    margin: 20px;
+    padding: 20px;
+    /*display: inline-table;*/
+    text-align: center;
+    /*width: 100%;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .songlist ul {
+    list-style-type: none;
+    max-width: 300px;
+    margin: auto;
+    padding: auto;
+    text-align: center;
+    position: relative;
+    left: 5%;
+  }
+
+
+
+  .songlist li img {
+    margin-right: 20px;
+    margin-top: 10px;
+    max-width: 200px;
+    height: 80px;
+    border-radius: 10px;
+  }
+
+
+
+  .songlist li {
+    float: left;
+    position: relative;
+    padding: 10px;
+    overflow: hidden;
+    border-radius: 10px;
+    /*display: table;*/
+    width: 200px;
+    /*margin: 10px;*/
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+
+}
+
 @media (min-width: 768px) {
-  /* Pull out the header and footer */
+ /* /* Pull out the header and footer */
   .masthead {
     position: fixed;
     top: 0;
@@ -198,7 +288,7 @@ body {
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .masthead,
   .mastfoot,
   .playerhead,
@@ -295,7 +385,7 @@ a.playertext:hover:after, a.playertext:focus:after {
   list-style-type: none;
   width: 700px;
   margin: 0;
-  margin-left: -10px;
+  margin-left: -30px;
   padding: 0;
 }
 
@@ -316,12 +406,8 @@ a.playertext:hover:after, a.playertext:focus:after {
 .songlist li {
   float: left;
   padding: 10px;
-  overflow: auto;
   border-radius: 10px;
-  /*display: inline;*/
   width: 350px;
-  /*margin: auto;*/
-  vertical-align: middle;
 }
 
 .songlist li h3, .songlist li p {
