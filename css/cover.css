@@ -208,20 +208,15 @@ body {
 @media (max-width: 768px) {
 
   .songlist {
-    /*margin-top: 20px;*/
     margin: 20px;
     padding: 20px;
     /*display: inline-table;*/
     text-align: center;
-    /*width: 100%;*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
   .songlist ul {
     list-style-type: none;
-    max-width: 300px;
+    max-width: 150px;
     margin: auto;
     padding: auto;
     text-align: center;
@@ -240,15 +235,14 @@ body {
 
 
   .songlist li {
-    float: left;
-    padding: 10px;
+    float: none;
     overflow: hidden;
     border-radius: 10px;
     /*display: table;*/
-    width: 200px;
+    /*width: 200px;*/
     /*margin: 10px;*/
-    margin-right: 50px;
-    margin-left: 20px;
+    margin-right: 20px;
+    margin-left: 30px;
   }
 
 }
