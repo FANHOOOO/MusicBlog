@@ -12,19 +12,18 @@
     <title>FAN MUSIC BLOG</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../../css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../../css/animate.css">
-    <link rel="stylesheet" href="../../css/hover.css">
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="../../css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <link href="../../../css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="../../css/cover.css" rel="stylesheet">
+    <link href="../../../css/cover.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="../../js/ie-emulation-modes-warning.js"></script>
+    <script src="../../../js/ie-emulation-modes-warning.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -41,30 +40,44 @@
 
         <div class="cover-container">
 
-          <div class="masthead">
+          <div class="playerhead">
             <div class="inner">
-              <div class="GuitarHead"><h3>Lihong 王力宏</h3></div>
+              <div class="GuitarHead"><h3>Jay Zhou 浪漫手机</h3></div>
               <div class="Navbar">
                 <nav>
                   <ul class="nav masthead-nav">
-                    <li><a href="../../piano.html">Back</a></li>
-                    <li><a href="../../me.html">About Me</a></li>
+                    <li><a href="../../../piano.html">Piano Home</a></li>
+                    <li><a href="../P_Jay.html">Back</a></li>
                   </ul>
                 </nav>
               </div>
             </div>
           </div>
-
-          <div class="row row-fluid songlist">
-            <div class="col-md-10 col-md-offset-1 col-lg-10 col-offset-1">
-              <ul>
-                <li><a href="SongList/P_KissGoodbye.html"><img src="../../images/players/lihong.jpg"><h3>KissGoodbye</h3><p>作词：王力宏 作曲：王力宏 </p></a></li>
-                <li><a href="SongList/P_唯一.html"><img src="../../images/players/lihong.jpg"><h3>唯一</h3><p>作词：王力宏 作曲：王力宏 </p></a></li>
-              </ul>
+          <br>
+          <br>
+          <div class="row row-fluid SongDetail">
+            <div class="col-md-12  col-lg-12">
+              <div class="InfoNav">
+                <ul>
+                  <li><span class="label label-default mylabel"><a href="#">From: 虫虫钢琴</span></a></li>
+                  <li><span class="label label-default mylabel">作词：方文山</span></li>
+                  <li><span class="label label-default mylabel">作曲：周杰伦</span></li>
+                </ul>
+              </div>
+              <br>
+              <br>
+              <div class="ContectImg piano">
+                <img src="../SongImg/P_浪漫手机1.gif" class="img-fluid" alt="Responsive image" width="80%">
+                <img src="../SongImg/P_浪漫手机2.gif" class="img-fluid" alt="Responsive image" width="80%">
+                <img src="../SongImg/P_浪漫手机3.gif" class="img-fluid" alt="Responsive image" width="80%">
+              </div>
+            <!--   <div class="embed-responsive embed-responsive-4by3">
+                <iframe class="embed-responsive-item" src="../SongImg/爱在西元前.jpg" style="width: 100%"></iframe>
+              </div> -->
             </div>
           </div>
 
-          <div class="mastfoot">
+          <div class="playerfoot">
             <div class="inner">
               <p>Copyright &copy; 2016 Yifan Jiang
               <br> Built with <a href='http://getbootstrap.com/'>Bootstrap</a>, <a href='https://fortawesome.github.io/Font-Awesome/'>Font Awesome</a> and more.
@@ -81,23 +94,17 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="../../js/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="../../js/jquery.min.js"><\/script>')</script>
-    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../../js/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../../js/jquery.min.js"><\/script>')</script>
+    <script src="../../../js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../js/ie10-viewport-bug-workaround.js"></script>
+    <script src="../../../js/ie10-viewport-bug-workaround.js"></script>
     <script type="text/javascript">
       $("a").hover(function(){
         $(this).find("img").addClass("animated infinite pulse");
       },function(){
         $(this).find("img").removeClass("animated infinite pulse");
       });
-      $(".songlist li").hover(function(){
-        $(this).addClass("hvr-grow-shadow");
-      },function(){
-        $(this).removeClass("hvr-grow-shadow");
-      });
-
     </script>
   </body>
 </html>
